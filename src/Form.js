@@ -34,6 +34,7 @@ export default function Form(props) {
                 </div>
             </div>
 
+            {/*text inputs */}
             <div id = 'name-input'>
                 <label>Enter your name
                 <input
@@ -46,8 +47,8 @@ export default function Form(props) {
 
             </div>
 
+            {/*dropdown selections */}
             <div id = 'size-dropdown'>
-                
                 <label>Choose a pizza size
                     <select
                     onChange={onChange}
@@ -63,6 +64,7 @@ export default function Form(props) {
                 </label>
             </div>
 
+            {/*radio buttons */}
             <div className='form-group radio-button'>
                 <label>original red
                     <input
@@ -104,6 +106,8 @@ export default function Form(props) {
                     />
                 </label>
             </div>
+
+            {/*checkboxes */}
 
             <div className='form-group checkbox'>
                 <h4>Add toppings</h4>
@@ -282,6 +286,7 @@ export default function Form(props) {
                 </label>
             </div>
 
+            {/*text input */}
             <div id='special-text'>
                 <h4>Special Instructions</h4>
                 <label>

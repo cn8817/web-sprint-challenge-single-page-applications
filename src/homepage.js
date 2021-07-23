@@ -9,7 +9,7 @@ export default function Home() {
 
 return (
     <div id='home'>
-        <button id='order-pizza' onClick={routeToPizza}>Pizza?</button>
+        <button id='order-pizza' onClick={routeToPizza}>Pizza?</button> {/**button to go to the pizza building page */}
     </div>
 )
 }

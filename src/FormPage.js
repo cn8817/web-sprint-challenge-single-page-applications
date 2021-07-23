@@ -58,6 +58,7 @@ const initialFormValues = {
       postPizza(newPizza)
     }
   
+    //helpers
     const getPizza = () => {
       axios.get('fakeapi.com')
         .then(res => {
@@ -106,7 +107,7 @@ const initialFormValues = {
     
   
   
-    return (
+    return ( //rendering the form page
       <div>
         <Link to={`/pizza`}>
         <Form 
