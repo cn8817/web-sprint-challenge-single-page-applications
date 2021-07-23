@@ -1,7 +1,10 @@
-import Pizzas from './Pizzas'
+import React, { useState, useEffect } from 'react'
 import Form from './Form'
 import schema from './validation/schema'
 import { reach } from 'yup'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
+
 
 const initialFormValues = {
     name:'',
@@ -111,6 +114,7 @@ const initialFormValues = {
   
     return (
       <div>
+        <Link to={`/pizza`}>
         <Form 
           values={formValues}
           change={inputChange}
@@ -118,13 +122,7 @@ const initialFormValues = {
           disbled={disabled}
           errors={formErrors}
         />
-        {
-          pizza.map(pizzas => {
-            return (
-              <Pizzas key={pizza.id} details={pizzas} />
-            )
-          })
-        }
+        </Link>
       </div>
     );
   };
