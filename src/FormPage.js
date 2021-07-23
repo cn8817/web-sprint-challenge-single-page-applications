@@ -38,8 +38,6 @@ const initialFormValues = {
     sauce:'',
     toppings:'',
   }
-  
-  const initialPizza = []
   const initialDisabled = true
 
   const FormPage = () => {
