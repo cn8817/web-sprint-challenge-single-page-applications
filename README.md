@@ -48,7 +48,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 - [ ] Push commits: `git push origin <firstName-lastName>`
 
 ### Task 2: Project Requirements
-
+ 
 Your finished project must include all of the following requirements:
 
 - [ ] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable but must have an id of "order-pizza")

@@ -1,6 +1,11 @@
 import * as yup from 'yup'
 
 const formSchema = yup.object().shape({
+    name: yup
+        .string()
+        .trim()
+        .required('Name is required')
+        .min(2, 'Name must be longer than 2 characters'),
     size: yup
         .string()
         .oneOf(['small','medium','large','extra large'], 'Pizza size is required'),
@@ -8,6 +13,7 @@ const formSchema = yup.object().shape({
     sauce: yup
         .string()
         .oneOf(['originalRed', 'garlicAlfredo', 'bbqSauce', 'pestoSauce'], 'sauce is required'),
+
 
     pepperoni: yup.boolean(),
     sausage: yup.boolean(),
@@ -28,6 +34,10 @@ const formSchema = yup.object().shape({
     threeCheese: yup.boolean(),
     extraCheese: yup.boolean(),
 
+    instructions: yup
+        .string(),
+    glutonFree:yup
+        .string(),
 })
 
 export default formSchema

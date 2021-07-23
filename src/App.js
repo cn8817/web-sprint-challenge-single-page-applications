@@ -12,8 +12,25 @@ const initialFormValues = {
   name:'',
   size:'' ,     //items to build a pizza
   sauce:'',
-  toppings:'',
-  substitute:'',
+  pepperoni: false,
+    sausage: false,
+    bacon: false,
+    salami: false,
+    ham: false,
+    chicken: false,
+    mushroom: false,
+    bellPeppers: false,
+    dicedTomatoes: false,
+    onion: false,
+    jalapenos: false,
+    garlic: false,
+    blackOlives: false,
+    spinach: false,
+    pineapple: false,
+    mozzarellaCheese: false,
+    threeCheese: false,
+    extraCheese: false,
+  glutonFree:false,
   instructions:'',
 }
 
@@ -44,8 +61,6 @@ const App = () => {
       name: formValues.name.trim(),
       size: formValues.size.trim(),
       sauce: formValues.sauce.trim(),
-      toppings: ['pepperoni','sausage','bacon','salami','ham','chicken','mushroom','bellPeppers','dicedTomatoes','onion','jalapenos','garlic','blackOlives','spinach','pineapple','mozzarellaCheese','threeCheese','extraCheese'].filter(top => formValues[top]),
-      substitute: formValues.substitute.trim(),
       instructions: formValues.instructions.trim(),
     }
     postPizza(newPizza)
