@@ -50,10 +50,6 @@ const initialFormValues = {
     const [disabled, setDisabled] = useState(initialDisabled)
   
   
-    const updateForm = (inputName, inputValue) => {
-      setFormValues({...formValues, [inputName]: inputValue})
-    }
-  
     const submitForm =() => {
       const newPizza = {
         name: formValues.name.trim(),

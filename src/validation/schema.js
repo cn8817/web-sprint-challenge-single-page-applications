@@ -12,7 +12,6 @@ const formSchema = yup.object().shape({
 
     sauce: yup
         .string()
-        .oneOf(['originalRed', 'garlicAlfredo', 'bbqSauce', 'pestoSauce'], 'sauce is required'),
 
 
     pepperoni: yup.boolean(),
