@@ -21,7 +21,7 @@ export default function Form(props) {
     }
 
     return (
-        <form className='form container' onSubmit={onSubmit}>
+        <form id='pizza-form' onSubmit={onSubmit}>
             <div className='form-group pizza'>
                 <h2>Make a pizza</h2>
                 <div className='errors'> {/*rendering the validation errors */}
@@ -34,7 +34,7 @@ export default function Form(props) {
                 </div>
             </div>
 
-            <div className = 'form-group name'>
+            <div id = 'name-input'>
                 <label>Enter your name
                 <input
                         type='text'
@@ -46,7 +46,7 @@ export default function Form(props) {
 
             </div>
 
-            <div className = 'form-group dropdown'>
+            <div id = 'size-dropdown'>
                 
                 <label>Choose a pizza size
                     <select
@@ -282,7 +282,7 @@ export default function Form(props) {
                 </label>
             </div>
 
-            <div className='form-group input'>
+            <div id='special-text'>
                 <h4>Special Instructions</h4>
                 <label>
                     <input
