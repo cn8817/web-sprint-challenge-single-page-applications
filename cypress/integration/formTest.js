@@ -1,6 +1,6 @@
 describe('Sprint challenge', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/pizza')
+        cy.visit('http://localhost:3000')
     })
 
     it('check if text input works', () => {
@@ -17,7 +17,6 @@ describe('Sprint challenge', () => {
 
     it('check if we can submit', () => {
         nameInput().type('christine')
-        sizeInput().select('small')
         submitBtn().should('not.be.disabled')
     })
 })
