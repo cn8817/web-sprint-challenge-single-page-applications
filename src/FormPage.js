@@ -109,7 +109,6 @@ const initialFormValues = {
   
     return ( //rendering the form page
       <div>
-        <Link to={`/pizza`}>
         <Form 
           values={formValues}
           change={inputChange}
@@ -117,7 +116,6 @@ const initialFormValues = {
           disbled={disabled}
           errors={formErrors}
         />
-        </Link>
       </div>
     );
   };
